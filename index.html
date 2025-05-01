@@ -21,6 +21,16 @@
                 </ul>
             </nav>
         </div>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "C8U82Dmex07CBDRni",
+            });
+        })();
+        </script>
     </header>
 
     <!-- Home section -->
@@ -79,9 +89,7 @@
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <!-- will add CV -->
-                    <!-- <a href="#" download="" class="btn primary-btn">Download CV</a> -->
-                    <a href="#" class="btn primary-btn">Download CV</a>
+                    <a href="static/cv/Prabesh_Nepal_CV.pdf" download="Prabesh_Nepal_CV" class="btn primary-btn">Download CV</a>
                 </div>
             </div>
         </div>
@@ -271,6 +279,7 @@
         </div>
     </footer>
 
+    
 
     <script>
         document.addEventListener('DOMContentLoaded',()=>{
@@ -280,13 +289,30 @@
             let email = event.target.email.value;
             let subject = event.target.subject.value;
             let message = event.target.message.value;
+            let params = {
+                name:name,
+                email:email,
+                subject:subject,
+                message:message
+            }
             if (name.trim() && email.trim() && subject.trim() && message.trim()) {
-                document.getElementById('success').style.display = 'block';
+                emailjs.send("service_5eizowr","template_6idwmwc",params).then(
+                    document.getElementById('success').style.display = 'block'
+                )
+                event.target.reset();
             } 
             else {
                 document.getElementById('error').style.display = 'block';
             }
             })
+
+            function sendMail(){
+                let params = {
+                    name:document.getElementById('name'),
+                    email:document.getElementById('email'),
+                    subject:document.getElementById('subject'),
+                }
+            }
         })
     </script>
 </body>
