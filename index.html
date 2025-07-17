@@ -13,17 +13,15 @@
             <div class="logo"> <span class="highlight">Portfolio</span></div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script type="text/javascript">
         (function(){
             emailjs.init({
@@ -38,10 +36,11 @@
         <div class="container">
             <div class="hero-container">
                 <div class="intro">Hi, I am <span class="highlight">Prabesh Nepal</span></div>
-                <h2>I am a <span class="highlight">Fullstack Developer</span></h2>
-                <p>A passionate developer with expertise in database and development.<p>
+                <h2>I am a <span class="highlight">Software Developer</span></h2>
+                <h3>Web-Developer and AI Enthusiast</h3>
+                <p>A passionate developer with expertise in database, development and machine learning.<p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
                 <div class="social-links">
@@ -50,8 +49,12 @@
                     <a href="https://x.com/Prabesh32866958" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="scroll-down">
-                    <a href="#about"><i class="fas fa-chevron-down"></i></a>
+                <div>
+                    <a href="#about">
+                        <div class="scroll-down">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="image-container">
@@ -75,8 +78,11 @@
                 <h2>Who am I?</h2>
                 <p>
                     I'm a dedicated software developer specializing in web development and design. My passion lies in creating beautiful, functional digital experiences that solve real problems.
-                    <br><br>
+                    <br>
                     My approach combines creative thinking with technical expertise to deliver solutions that exceed client expectations.
+                    <br><br>
+                    Currently exploring the field of AI and Machine Learning.
+                    
                 </p>
                 <div class="about-detail">
                     <div>
@@ -94,19 +100,136 @@
             </div>
         </div>
         <div class="skills-container">
-            <h1>My skills</h1>
+            <h1>My Skills</h1>
 
-            <div class="skills">
-                <div class="skill-item"><img src="static/skills/c.png" alt="C"></div>
-                <div class="skill-item"><img src="static/skills/c++.png" alt="C++"></div>
-                <div class="skill-item"><img src="static/skills/html.png" alt="html"></div>
-                <div class="skill-item"><img src="static/skills/tailwind.jpeg" alt="tailwind"></div>
-                <div class="skill-item"><img src="static/skills/js.png" alt="JS"></div>
-                <div class="skill-item"><img src="static/skills/sql.png" alt="sql"></div>
-                <div class="skill-item"><img src="static/skills/python.png" alt="python"></div>
-                <div class="skill-item"><img src="static/skills/django.png" alt="django"></div>
-                <div class="skill-item"><img src="static/skills/flutter.png" alt="flutter"></div>
-                <div class="skill-item"><img src="static/skills/git.png" alt="git"></div>
+            <div class="skills-categories">
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h2 class="category-title">Programming Languages</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="static/skills/c.png" alt="C">
+                            <p class="skill-name">C</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/c++.png" alt="C++">
+                            <p class="skill-name">C++</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/cs.png" alt="C#">
+                            <p class="skill-name">C#</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/python.png" alt="Python">
+                            <p class="skill-name">Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/dart.png" alt="Dart">
+                            <p class="skill-name">Dart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌐</div>
+                        <h2 class="category-title">Web Development</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="static/skills/html.png" alt="HTML">
+                            <p class="skill-name">HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/tailwind.jpeg" alt="Tailwind CSS">
+                            <p class="skill-name">Tailwind CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/js.png" alt="JavaScript">
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/django.png" alt="Django">
+                            <p class="skill-name">Django</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/flask.png" alt="Flask">
+                            <p class="skill-name">Flask</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning and AI -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔧</div>
+                        <h2 class="category-title">AI/ML</h2>
+                    </div>
+                    <div class="skills-grid">
+                        
+                        <div class="skill-item">
+                            <img src="static/skills/numpy.png" alt="Numpy">
+                            <p class="skill-name">Numpy</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/pandas.png" alt="Pandas">
+                            <p class="skill-name">Pandas</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/sklearn.png" alt="Sklearn">
+                            <p class="skill-name">Sklearn</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/matplotlib.png" alt="Matplotlib">
+                            <p class="skill-name">Matplotlib</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/seaborn.png" alt="Seaborn">
+                            <p class="skill-name">Seaborn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🛠️</div>
+                        <h2 class="category-title">Database & Tools</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="static/skills/sql.png" alt="SQL">
+                            <p class="skill-name">SQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/git.png" alt="Git">
+                            <p class="skill-name">Git</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Others -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🛠️</div>
+                        <h2 class="category-title">Extras</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="static/skills/flutter.png" alt="Git">
+                            <p class="skill-name">Flutter</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="static/skills/linux.jpeg" alt="Git">
+                            <p class="skill-name">Linux</p>
+                        </div>
+                    </div>                    
+                </div>
             </div>
         </div>
         
@@ -130,27 +253,29 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
+                        <i class="fa fa-chart-line"></i>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Designing intuitive user interfaces and experiences that engage and convert visitors.</p>
+                    <h3>Data Science</h3>
+                    <p>Transforming raw data into actionable insights using statistical analysis, machine learning, and data visualization to drive smarter decisions.</p>
                 </div>
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Mobile Development</h3>
-                    <p>Building cross-platform mobile applications that work flawlessly on all devices.</p>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Designing intelligent, data-driven applications using machine learning, deep learning, and predictive analytics to solve real-world problems.</p>
                 </div>
+
                 
             </div>
         </div>
      </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
+    <!-- Project Section -->
+    <section class="projects" id="projects">
         <div class="section-header">
-            <div class="intro">My Portfolio</div>
+            <div class="intro">My Projects</div>
             <div class="divider"></div>
             <p>Some of my recent works</p><br>
             <h3>Here are some of my <span class="highlight">projects</span> I worked hard for : </h3>
@@ -164,8 +289,14 @@
                         <img src="static/chat.png" alt="">
                     </div>
                     <h3>Chatting App</h3>
-                    <p>This is a web app built using Django Channels and Websockets</p>
-                    <p>It has functionality like authentication, private and group chat,etc.</p>
+                    <p>This is a web app built using Django Channels and Websockets.</p>
+                    <ul style="list-style: circle;">
+                        <li>Private (one-to-one) chat and group chat
+                        <li>Real-time messaging with WebSockets</li>
+                        <li>Voice message recording and playback</li>
+                        <li>Peer-to-peer voice calls (WebRTC)</li>
+                        <li> Admin panel for user management</li>
+                    </ul>
                     <a  href="https://chat-app-vtpp.onrender.com/"  class="highlight"><span><h2>Try it now </h2><i class="fas fa-arrow-right"></i></span></h2></a>
                 </div>
                 <div class="blog-card">
@@ -179,7 +310,18 @@
                     <a  href="https://donation-system-uwvm.onrender.com"  class="highlight"><span><h2>Try it now </h2><i class="fas fa-arrow-right"></i></span></h2></a>
                 </div>
                 <div class="blog-card">
-                    <div><i class="far fa-calendar"></i> 1 year ago</div>
+                    <div><i class="far fa-calendar"></i> June 24, 2025</div>
+                    <div class="blog-card-image-container">
+                        <img src="static/spam.png" alt="Spam">
+                    </div>
+                    <h3>Spam Detection Model</h3>
+                    <p>AI model trained on Support Vector Machine.</p>
+                    <p>Uses python script to run. Takes any string or message and predicts whether it is spam or not.</p>
+                    <p><a href="https://bit.ly/3GxeJ3V">Github Link</a></p>
+                    <a href="static/models/spam_detection_model.pkl" download="AppRelease" class="highlight"><span><h2>Save Model</h2><i class="fas fa-arrow-right"></i></span></h2></a>
+                </div>
+                <div class="blog-card">
+                    <div><i class="far fa-calendar"></i> 2 year ago</div>
                     <div class="blog-card-image-container">
                         <img src="static/ludo.jpeg" alt="">
                     </div>
@@ -193,7 +335,7 @@
         </div>
     </section>
 
-
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contactcontainer">
@@ -285,6 +427,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded',()=>{
+
             document.getElementById('contactForm').addEventListener('submit',(event) => {
             event.preventDefault();
             let name = event.target.name.value;
@@ -315,7 +458,40 @@
                     subject:document.getElementById('subject'),
                 }
             }
+
+            function updateActiveNavigation() {
+
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let currentSection = '';
+                const scrollPosition = window.scrollY + 100; // Offset for fixed navbar
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                // Update active class
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', updateActiveNavigation);
+            
+            // Initial call to set active state
+            updateActiveNavigation();
         })
+
     </script>
 </body>
 </html>
