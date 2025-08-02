@@ -44,10 +44,10 @@
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/prabeshnpl" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/Prabesh32866958" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank" rel="noopener" ><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/prabeshnpl" target="_blank" rel="noopener" ><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/Prabesh32866958" target="_blank" rel="noopener" ><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank" rel="noopener" ><i class="fab fa-instagram"></i></a>
                 </div>
                 <div>
                     <a href="#about">
@@ -273,7 +273,7 @@
      </section>
 
     <!-- Project Section -->
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
         <div class="section-header">
             <div class="intro">My Projects</div>
             <div class="divider"></div>
@@ -282,7 +282,8 @@
         </div><br><br>
 
         <div class="container">
-            <div class="project-container">
+            <div class="project-container"> 
+
                 <div class="blog-card">
                     <div><i class="far fa-calendar"></i> March 15, 2025</div>
                     <div class="blog-card-image-container">
@@ -290,25 +291,16 @@
                     </div>
                     <h3>Chatting App</h3>
                     <p>This is a web app built using Django Channels and Websockets.</p>
-                    <ul style="list-style: circle;">
-                        <li>Private (one-to-one) chat and group chat
-                        <li>Real-time messaging with WebSockets</li>
-                        <li>Voice message recording and playback</li>
-                        <li>Peer-to-peer voice calls (WebRTC)</li>
-                        <li> Admin panel for user management</li>
+                    <ul>
+                        <li>Private (one-to-one) chat and group chat.</li>
+                        <li>Real-time messaging with WebSockets.</li>
+                        <li>Voice message recording and playback.</li>
+                        <li>Peer-to-peer voice calls (WebRTC).</li>
+                        <li> Admin panel for user management.</li>
                     </ul>
-                    <a  href="https://chat-app-vtpp.onrender.com/"  class="highlight"><span><h2>Try it now </h2><i class="fas fa-arrow-right"></i></span></h2></a>
-                </div>
-                <div class="blog-card">
-                    <div><i class="far fa-calendar"></i> January 14, 2025</div>
-                    <div class="blog-card-image-container">
-                        <img src="static/donationMS.png" alt="">
-                    </div>
-                    <h3>Donation Management System</h3>
-                    <p>System for managing and controlling donations. </p>
-                    <p>It helps NGO's and INGO's to raise and manage funds more easily by having interfaces for both donor and beneficiary.</p>
-                    <a  href="https://donation-system-uwvm.onrender.com"  class="highlight"><span><h2>Try it now </h2><i class="fas fa-arrow-right"></i></span></h2></a>
-                </div>
+                    <a  href="https://chat-app-vtpp.onrender.com/"  class="highlight" target="_blank" rel="noopener"><span><h2>Try it now </h2><i class="fas fa-arrow-right"></i></span></h2></a>
+                </div>     
+
                 <div class="blog-card">
                     <div><i class="far fa-calendar"></i> June 24, 2025</div>
                     <div class="blog-card-image-container">
@@ -317,9 +309,33 @@
                     <h3>Spam Detection Model</h3>
                     <p>AI model trained on Support Vector Machine.</p>
                     <p>Uses python script to run. Takes any string or message and predicts whether it is spam or not.</p>
-                    <p><a href="https://bit.ly/3GxeJ3V">Github Link</a></p>
-                    <a href="static/models/spam_detection_model.pkl" download="AppRelease" class="highlight"><span><h2>Save Model</h2><i class="fas fa-arrow-right"></i></span></h2></a>
+                    <p><a href="https://bit.ly/3GxeJ3V" target="_blank" rel="noopener">Github Link</a></p>
+                    <a href="static/models/spam_detection_model.pkl" download="spam_model.pkl" class="highlight"><span><h2>Save Model</h2><i class="fas fa-arrow-right"></i></span></h2></a>
+                </div>   
+
+                <div class="blog-card">
+                    <div><i class="far fa-calendar"></i> August 1, 2025</div>
+                    <div class="blog-card-image-container">
+                        <img src="static/lr.png" alt="Linear Regression">
+                    </div>
+                    <h3>Linear Regression Model</h3>
+                    <p>Python program that uses linear regression algorithm to fit data.</p>
+                    <p>Python script programmed from scratch implementing mathematical derivation of linear regression algorithm.</p>
+                    <p><a href="https://github.com/prabeshnpl/Linear-Regression-scratch" target="_blank" rel="noopener">Github Link</a></p>
+                    <a href="static\cv\Linear Regression Notes.pdf" download="LR_Notes.pdf" class="highlight"><span><h2>Download PDF</h2><i class="fas fa-arrow-right"></i></span></h2></a>
+                </div>  
+
+                <div class="blog-card">
+                    <div><i class="far fa-calendar"></i> January 14, 2025</div>
+                    <div class="blog-card-image-container">
+                        <img src="static/donationMS.png" alt="">
+                    </div>
+                    <h3>Donation Management System</h3>
+                    <p>System for managing and controlling donations. </p>
+                    <p>It helps NGO's and INGO's to raise and manage funds more easily by having interfaces for both donor and beneficiary.</p>
+                    <a  href="https://donation-system-uwvm.onrender.com"  class="highlight" target="_blank" rel="noopener"><span><h2>Try it now </h2><i class="fas fa-arrow-right"></i></span></h2></a>
                 </div>
+
                 <div class="blog-card">
                     <div><i class="far fa-calendar"></i> 2 year ago</div>
                     <div class="blog-card-image-container">
@@ -330,7 +346,167 @@
                     <p>It is not completed though !!!</p>
                     <a href="static/apk/app-release.apk" download="AppRelease" class="highlight"><span><h2>Download</h2><i class="fas fa-arrow-right"></i></span></h2></a>
                 </div>
-                
+
+            </div>
+        </div>
+    </section> -->
+
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <div class="intro">My Projects</div>
+            <div class="divider"></div>
+            <p>Some of my recent works</p><br>
+            <h3>Here are some of my <span class="highlight">projects</span> I worked hard for : </h3>
+        </div>
+
+        <div class="container">
+            <div class="project-container">
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="static/chat.png" alt="Chatting App">
+                        <div class="status-badge status-live">Live</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <i class="far fa-calendar"></i>
+                            March 15, 2025
+                        </div>
+                        <h3 class="card-title">Chatting App</h3>
+                        <p class="card-description">Real-time web application built with Django Channels and WebSockets featuring private & group chat, voice messages, and WebRTC calls.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">WebRTC</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://chat-app-vtpp.onrender.com/" class="btn-primary" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                Try Live
+                            </a>
+                            <a href="https://github.com/prabeshnpl/Chat-App" class="btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="static/spam.png" alt="Spam Detection">
+                        <div class="status-badge status-download">Model</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <i class="far fa-calendar"></i>
+                            June 24, 2025
+                        </div>
+                        <h3 class="card-title">Spam Detection Model</h3>
+                        <p class="card-description">AI model using Support Vector Machine to classify messages as spam or legitimate with high accuracy.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="static/models/spam_detection_model.pkl" download="spam_model.pkl" class="btn-primary">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                            <a href="https://bit.ly/3GxeJ3V" class="btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="static/lr.png" alt="Linear Regression">
+                        <div class="status-badge status-download">PDF</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <i class="far fa-calendar"></i>
+                            August 1, 2025
+                        </div>
+                        <h3 class="card-title">Linear Regression Model</h3>
+                        <p class="card-description">From-scratch implementation of linear regression algorithm with mathematical derivations and detailed documentation.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Mathematics</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="static/cv/Linear Regression Notes.pdf" download="LR_Notes.pdf" class="btn-primary">
+                                <i class="fas fa-file-pdf"></i>
+                                Get PDF
+                            </a>
+                            <a href="https://github.com/prabeshnpl/Linear-Regression-scratch" class="btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="static/donationMS.png" alt="Donation System">
+                        <div class="status-badge status-live">Live</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <i class="far fa-calendar"></i>
+                            January 14, 2025
+                        </div>
+                        <h3 class="card-title">Donation Management System</h3>
+                        <p class="card-description">Comprehensive platform for NGOs and INGOs to manage donations with separate interfaces for donors and beneficiaries.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://donation-system-uwvm.onrender.com" class="btn-primary" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                                Try Live
+                            </a>
+                            <a href="https://github.com/prabeshnpl/Donation-System" class="btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="static/ludo.jpeg" alt="Ludo Game">
+                        <div class="status-badge status-beta">Beta</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <i class="far fa-calendar"></i>
+                            2 years ago
+                        </div>
+                        <h3 class="card-title">Ludo Game</h3>
+                        <p class="card-description">Mobile recreation of the classic Ludo board game. Currently in beta with core gameplay implemented.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Mobile</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="static/apk/app-release.apk" download="LudoGame.apk" class="btn-primary">
+                                <i class="fas fa-mobile-alt"></i>
+                                Get APK
+                            </a>
+                            <a href="https://github.com/prabeshnpl/flutter_ludo" class="btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -376,10 +552,10 @@
                         <div class="contact-social">
                             <h3>Follow Me</h3>
                             <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/prabeshnpl" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://x.com/Prabesh32866958" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/prabeshnpl" target="_blank" rel="noopener"><i class="fab fa-github" ></i></a>
+                                <a href="https://x.com/Prabesh32866958" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
