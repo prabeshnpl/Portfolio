@@ -1,649 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Prabesh Nepal | Python & Django Developer</title>
-
-  <meta name="description" content="Prabesh Nepal is a Python and Django developer from Nepal, showcasing projects, skills, and experience in backend development." />
-
-  <meta name="keywords" content="Prabesh Nepal, Django Developer, Python Developer, Nepal, Backend Developer, Portfolio" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prabesh Nepal — Backend Developer</title>
+  <meta name="description" content="Prabesh Nepal is a Backend Developer from Nepal specializing in Django, DRF, and scalable API systems." />
   <meta name="author" content="Prabesh Nepal" />
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Open Graph (for Google + social previews) -->
-  <meta property="og:title" content="Prabesh Nepal | Python & AI/ML Developer" />
-  <meta property="og:description" content="Prabesh Nepal is a Python and AI/ML developer from Nepal, showcasing projects, skills, and experience in backend development." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://prabeshnepal.com.np" />
-  <meta property="og:image" content="https://prabeshnepal.com.np/static/profile.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"> <span class="highlight">Portfolio</span></div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "C8U82Dmex07CBDRni",
-            });
-        })();
-        </script>
-    </header>
 
-    <!-- Home section -->
-    <section class="home" id="home">
-        <div class="container">
-            <div class="hero-container">
-                <div class="intro">Hi, I am <span class="highlight">Prabesh Nepal</span></div>
-                <h2>I am a <span class="highlight">Software Developer</span></h2>
-                <h3>Backend-Developer and AI Enthusiast</h3>
-                <p>
-                    I am a backend developer specializing in Django, REST APIs,
-                    database design, and scalable systems.
-                </p>
-                <p>
-                    Also an AI/ML Enthusiast who never stops learning.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">View My Work</a>
-                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank" rel="noopener" ><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/prabeshnpl" target="_blank" rel="noopener" ><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/Prabesh32866958" target="_blank" rel="noopener" ><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank" rel="noopener" ><i class="fab fa-instagram"></i></a>
-                </div>
-                <div>
-                    <a href="#about">
-                        <div class="scroll-down">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </a>
-                </div>
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <span class="nav-name"><a href="#home">Prabesh Nepal</a></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Backend Developer &amp; AI Enthusiast</p>
+        <h1>Prabesh<br /><em>Nepal</em></h1>
+        <p class="hero-bio">
+          I build scalable APIs and backend systems with Django &amp; DRF.
+          Currently studying Computer Science at Mechi Multiple Campus located in Bhadrapur, Jhapa.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-photo">
+          <img src="static/profile.jpg" alt="Prabesh Nepal" />
+        </div>
+        <div class="availability-badge">
+          <span class="dot"></span> Available for opportunities
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/prabeshnpl" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:prabeshnepal0@gmail.com">Email ↗</a>
+          <a href="static/cv/Prabesh_Nepal_CV.pdf" download>Resume ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Who I am</h2>
+          <p>
+            I'm a backend-focused software developer with a strong foundation in Python, Django, and RESTful API design. 
+            I care about clean architecture, readable code, and scalable systems.
+          </p>
+          <p>
+            Beyond backend work, I'm actively exploring AI/ML since I started enjoying training models and translating raw data into useful things. 
+          </p>
+          <p>
+            Besides all of these, I usually love travelling or tinkering with something new.
+          </p>
+        </div>
+        <div class="about-details">
+          <dl class="detail-list">
+            <div>
+              <dt>Location</dt>
+              <dd>Bhadrapur-1, Jhapa, Nepal</dd>
             </div>
-            <div class="image-container">
-                <img src="static/profile.jpg" alt="Profile">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:prabeshnepal0@gmail.com">prabeshnepal0@gmail.com</a></dd>
             </div>
-        </div>
-    </section>
-
-    <!-- About section -->
-    <section class="about" id="about">
-        <div class="section-header">
-            <div class="intro">About Me</div>
-            <div class="divider"></div>
-            <p>Get to know me better</p>
-        </div>
-        <div class="container">
-            <div class="about-image-container">
-                <img src="static/smallme.jpg" alt="">
+            <div>
+              <dt>Phone</dt>
+              <dd>+977 9815946526</dd>
             </div>
-            <div class="about-text">
-                <h2>Who am I?</h2>
-                <p>
-                    I'm a dedicated software developer specializing in backend development and design. 
-                    My passion lies in creating functional digital experiences that solve real problems.
-                    <br>
-                    <br><br>
-                    Currently exploring the field of AI and Machine Learning.
-                    
-                </p>
-                <div class="about-detail">
-                    <div>
-                        <p><strong>Name : </strong> PRABESH NEPAL</p>
-                        <p><strong>Email : </strong>prabeshnepal0@gmail.com</p>
-                    </div>
-                    <div>
-                        <p><strong>Phone : </strong> +977 9815946526</p>
-                        <p><strong>Location : </strong>Bhadrapur-1, Jhapa</p>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="static/cv/Prabesh_Nepal_CV.pdf" download="Prabesh_Nepal_CV" class="btn primary-btn">Download CV</a>
-                </div>
+            <div>
+              <dt>Education</dt>
+              <dd>B.Sc. CSIT — Mechi Multiple Campus (7th Sem)</dd>
             </div>
-        </div>
-        <div class="skills-container">
-            <h1>My Skills</h1>
-
-            <div class="skills-categories">
-
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">💻</div>
-                        <h2 class="category-title">Programming Languages</h2>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <img src="static/skills/c.png" alt="C">
-                            <p class="skill-name">C</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/c++.png" alt="C++">
-                            <p class="skill-name">C++</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/cs.png" alt="C#">
-                            <p class="skill-name">C#</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/python.png" alt="Python">
-                            <p class="skill-name">Python</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/dart.png" alt="Dart">
-                            <p class="skill-name">Dart</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Web Development -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🌐</div>
-                        <h2 class="category-title">Web Development</h2>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <img src="static/skills/html.png" alt="HTML">
-                            <p class="skill-name">HTML</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/tailwind.jpeg" alt="Tailwind CSS">
-                            <p class="skill-name">Tailwind CSS</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/js.png" alt="JavaScript">
-                            <p class="skill-name">JavaScript</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/django.png" alt="Django">
-                            <p class="skill-name">Django</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/flask.png" alt="Flask">
-                            <p class="skill-name">Flask</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Machine Learning and AI -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🔧</div>
-                        <h2 class="category-title">AI/ML</h2>
-                    </div>
-                    <div class="skills-grid">
-                        
-                        <div class="skill-item">
-                            <img src="static/skills/numpy.png" alt="Numpy">
-                            <p class="skill-name">Numpy</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/pandas.png" alt="Pandas">
-                            <p class="skill-name">Pandas</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/sklearn.png" alt="Sklearn">
-                            <p class="skill-name">Sklearn</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/matplotlib.png" alt="Matplotlib">
-                            <p class="skill-name">Matplotlib</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/seaborn.png" alt="Seaborn">
-                            <p class="skill-name">Seaborn</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Database & Tools -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🛠️</div>
-                        <h2 class="category-title">Database & Tools</h2>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <img src="static/skills/sql.png" alt="SQL">
-                            <p class="skill-name">SQL</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/git.png" alt="Git">
-                            <p class="skill-name">Git</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Others -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">🛠️</div>
-                        <h2 class="category-title">Extras</h2>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <img src="static/skills/flutter.png" alt="Git">
-                            <p class="skill-name">Flutter</p>
-                        </div>
-                        <div class="skill-item">
-                            <img src="static/skills/linux.jpeg" alt="Git">
-                            <p class="skill-name">Linux</p>
-                        </div>
-                    </div>                    
-                </div>
+            <div>
+              <dt>Website</dt>
+              <dd><a href="https://prabeshnepal.com.np" target="_blank" rel="noopener">prabeshnepal.com.np ↗</a></dd>
             </div>
+          </dl>
         </div>
-        
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sevices section -->
-     <section id="services" class="services">
-        <div class="section-header">
-            <div class="intro">My Services</div>
-            <div class="divider"></div>
-            <p>What can I do for you</p><br>
-        </div><br><br>
-        <div class="container">
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Backend Developer</h3>
-                    <p>Building scalable APIs, designing robust database architectures, and developing efficient server-side solutions using Django and Python.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fa fa-chart-line"></i>
-                    </div>
-                    <h3>Data Science</h3>
-                    <p>Transforming raw data into actionable insights using statistical analysis, machine learning, and data visualization to drive smarter decisions.</p>
-                </div>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label">02 — Experience</div>
+      <h2 class="section-title">Work &amp; Education</h2>
+      <div class="timeline">
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Designing intelligent, data-driven applications using machine learning, deep learning, and predictive analytics to solve real-world problems.</p>
-                </div>
+        <!-- Work -->
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Aug 2025 — Jan 2026</span>
+            <span class="timeline-type work">Work</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Junior Backend Developer</h3>
+            <p class="timeline-org">Hunchha Digital — Itahari, Nepal</p>
+            <p class="timeline-desc">
+              Worked for ~6 months as a Junior Backend Developer, collaborating with the team to design and ship
+              production-grade backend systems. Gained hands-on experience with real-world project workflows,
+              scalable architecture patterns, and code review practices.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Designed and developed a complete backend system with guidance from senior developers</li>
+              <li>Delivered a production project for an Australian client — <a href="https://app.concreteconnections.com.au/" target="_blank" rel="noopener">concreteconnections.com.au ↗</a></li>
+              <li>Worked with Django, DRF, Docker, and PostgreSQL in a team environment</li>
+              <li>Participated in architecture planning, code reviews, and deployment workflows</li>
+            </ul>
+          </div>
+        </div>
 
-                
+        <!-- Education 1 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Dec 2022 — Present</span>
+            <span class="timeline-type edu">Education</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Bachelor's in Computer Science &amp; IT</h3>
+            <p class="timeline-org">Mechi Multiple Campus — Bhadrapur, Jhapa</p>
+            <p class="timeline-desc">
+              Currently in 7th semester pursuing B.Sc. CSIT. Coursework covers algorithms, data structures,
+              operating systems, networking, and software engineering.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Aug 2020 — Jun 2022</span>
+            <span class="timeline-type edu">Education</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Grade 11 &amp; 12 — Science</h3>
+            <p class="timeline-org">Birendra Secondary School — Bhadrapur, Jhapa</p>
+            <p class="timeline-desc">
+              Completed higher secondary under the National Examination Board (NEB).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">Selected Work</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">WebRTC</span>
             </div>
-        </div>
-     </section>
+            <span class="project-status live">Live</span>
+          </div>
+          <h3>Chat App</h3>
+          <p>Real-time web application with private &amp; group chat, voice messages, and WebRTC calls — built with Django Channels.</p>
+          <div class="project-links">
+            <a href="https://chat-app-vtpp.onrender.com/" target="_blank" rel="noopener">Try Live ↗</a>
+            <a href="https://github.com/prabeshnpl/Chat-App" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
 
-    <!-- Project Section -->
-    <section class="projects" id="projects">
-        <div class="section-header">
-            <div class="intro">My Projects</div>
-            <div class="divider"></div>
-            <p>Some of my recent works</p><br>
-            <h3>Here are some of my <span class="highlight">projects</span> I worked hard for : </h3>
-        </div>
-
-        <div class="container">
-            <div class="project-container">
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="static/chat.png" alt="Chatting App">
-                        <div class="status-badge status-live">Live</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-date">
-                            <i class="far fa-calendar"></i>
-                            March 15, 2025
-                        </div>
-                        <h3 class="card-title">Chatting App</h3>
-                        <p class="card-description">Real-time web application built with Django Channels and WebSockets featuring private & group chat, voice messages, and WebRTC calls.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">WebSockets</span>
-                            <span class="tech-tag">WebRTC</span>
-                        </div>
-                        <div class="card-actions">
-                            <a href="https://chat-app-vtpp.onrender.com/" class="btn-primary" target="_blank" rel="noopener">
-                                <i class="fas fa-external-link-alt"></i>
-                                Try Live
-                            </a>
-                            <a href="https://github.com/prabeshnpl/Chat-App" class="btn-secondary" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="static/spam.png" alt="Spam Detection">
-                        <div class="status-badge status-download">Model</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-date">
-                            <i class="far fa-calendar"></i>
-                            June 24, 2025
-                        </div>
-                        <h3 class="card-title">Spam Detection Model</h3>
-                        <p class="card-description">AI model using Support Vector Machine to classify messages as spam or legitimate with high accuracy.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">SVM</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                        </div>
-                        <div class="card-actions">
-                            <a href="static/models/spam_detection_model.pkl" download="spam_model.pkl" class="btn-primary">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                            <a href="https://bit.ly/3GxeJ3V" class="btn-secondary" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="static/lr.png" alt="Linear Regression">
-                        <div class="status-badge status-download">PDF</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-date">
-                            <i class="far fa-calendar"></i>
-                            August 1, 2025
-                        </div>
-                        <h3 class="card-title">Linear Regression Model</h3>
-                        <p class="card-description">From-scratch implementation of linear regression algorithm with mathematical derivations and detailed documentation.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">Mathematics</span>
-                        </div>
-                        <div class="card-actions">
-                            <a href="static/cv/Linear Regression Notes.pdf" download="LR_Notes.pdf" class="btn-primary">
-                                <i class="fas fa-file-pdf"></i>
-                                Get PDF
-                            </a>
-                            <a href="https://github.com/prabeshnpl/Linear-Regression-scratch" class="btn-secondary" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="static/e-com-logo.png" alt="E-commercer">
-                        <div class="status-badge status-live">Live</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-date">
-                            <i class="far fa-calendar"></i>
-                            October 14, 2025
-                        </div>
-                        <h3 class="card-title">KINMEL</h3>
-                        <p class="card-description">Simple website showcasing the flow of working mechanism of e-commerce .</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">sqlite.db</span>
-                            <span class="tech-tag">HTML+CSS</span>
-                        </div>
-                        <div class="card-actions">
-                            <a href="https://kinmel-7777.onrender.com" class="btn-primary" target="_blank" rel="noopener">
-                                <i class="fas fa-external-link-alt"></i>
-                                Try Live
-                            </a>
-                            <a href="https://github.com/prabeshnpl/E-commerce" class="btn-secondary" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="static/donationMS.png" alt="Donation System">
-                        <div class="status-badge status-live">Live</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-date">
-                            <i class="far fa-calendar"></i>
-                            January 14, 2025
-                        </div>
-                        <h3 class="card-title">Donation Management System</h3>
-                        <p class="card-description">Platform for NGOs and INGOs to manage donations with interfaces for donors and beneficiaries.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                        <div class="card-actions">
-                            <a href="https://donation-system-uwvm.onrender.com" class="btn-primary" target="_blank" rel="noopener">
-                                <i class="fas fa-external-link-alt"></i>
-                                Try Live
-                            </a>
-                            <a href="https://github.com/prabeshnpl/Donation-System" class="btn-secondary" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="static/ludo.jpeg" alt="Ludo Game">
-                        <div class="status-badge status-beta">Beta</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-date">
-                            <i class="far fa-calendar"></i>
-                            2 years ago
-                        </div>
-                        <h3 class="card-title">Ludo Game</h3>
-                        <p class="card-description">Mobile recreation of the classic Ludo board game. Currently in beta with core gameplay implemented.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">Mobile</span>
-                        </div>
-                        <div class="card-actions">
-                            <a href="static/apk/app-release.apk" download="LudoGame.apk" class="btn-primary">
-                                <i class="fas fa-mobile-alt"></i>
-                                Get APK
-                            </a>
-                            <a href="https://github.com/prabeshnpl/flutter_ludo" class="btn-secondary" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Bootstrap</span>
             </div>
-        </div>
-    </section>
+            <span class="project-status live">Live</span>
+          </div>
+          <h3>Donation Management System</h3>
+          <p>Platform for NGOs and INGOs to manage donations, with separate interfaces for donors and beneficiaries.</p>
+          <div class="project-links">
+            <a href="https://donation-system-uwvm.onrender.com" target="_blank" rel="noopener">Try Live ↗</a>
+            <a href="https://github.com/prabeshnpl/Donation-System" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contactcontainer">
-                <div class="section-header">
-                    <div class="intro">Contact Me</div>
-                    <div class="divider"></div>
-                    <p>Get in touch</p><br>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Location</h3>
-                                <p>Bhadrapur-1, Jhapa</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p>prabeshnepal0@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Phone</h3>
-                                <p>+977 9815946526</p>
-                            </div>
-                        </div>
-                        <div class="contact-social">
-                            <h3>Follow Me</h3>
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/prabeshnpl" target="_blank" rel="noopener"><i class="fab fa-github" ></i></a>
-                                <a href="https://x.com/Prabesh32866958" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/prabesh._.nepal/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn primary-btn">Send Message</button>
-                        </form>
-                        <div class="form-status">
-                            <div class="success-message" id="success">
-                                <i class="fas fa-check-circle"></i>
-                                <p>Your message has been sent successfully!</p>
-                            </div>
-                            <div class="error-message" id="error">
-                                <i class="fas fa-times-circle"></i>
-                                <p>Something went wrong. Please try again later.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">HTML/CSS</span>
             </div>
+            <span class="project-status live">Live</span>
+          </div>
+          <h3>KINMEL — E-Commerce</h3>
+          <p>A functional e-commerce site demonstrating end-to-end shopping flow, product listings, and order handling.</p>
+          <div class="project-links">
+            <a href="https://kinmel-7777.onrender.com" target="_blank" rel="noopener">Try Live ↗</a>
+            <a href="https://github.com/prabeshnpl/E-commerce" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SVM</span>
+              <span class="tag">Scikit-learn</span>
+            </div>
+            <span class="project-status model">Model</span>
+          </div>
+          <h3>Spam Detection Model</h3>
+          <p>AI model using Support Vector Machine to classify messages as spam or legitimate with high accuracy.</p>
+          <div class="project-links">
+            <a href="static/models/spam_detection_model.pkl" download>Download Model ↓</a>
+            <a href="https://bit.ly/3GxeJ3V" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Math</span>
+            </div>
+            <span class="project-status model">PDF</span>
+          </div>
+          <h3>Linear Regression from Scratch</h3>
+          <p>From-scratch implementation of linear regression with mathematical derivations and detailed documentation.</p>
+          <div class="project-links">
+            <a href="static/cv/Linear Regression Notes.pdf" download>Get PDF ↓</a>
+            <a href="https://github.com/prabeshnpl/Linear-Regression-scratch" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <span class="project-status beta">Beta</span>
+          </div>
+          <h3>Ludo Game</h3>
+          <p>Mobile recreation of the classic Ludo board game with core gameplay implemented. Built with Flutter.</p>
+          <div class="project-links">
+            <a href="static/apk/app-release.apk" download>Get APK ↓</a>
+            <a href="https://github.com/prabeshnpl/flutter_ludo" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label">04 — Skills</div>
+      <h2 class="section-title">Technical Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-pills">
+            <span>Python</span><span>C</span><span>C++</span><span>C#</span><span>Dart</span><span>JavaScript</span>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Prabesh Nepal. All Rights Reserved.</p>
-            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        <div class="skill-group">
+          <h4>Backend &amp; Web</h4>
+          <div class="skill-pills">
+            <span>Django</span><span>DRF</span><span>Flask</span><span>WebSockets</span><span>HTML</span><span>Tailwind CSS</span>
+          </div>
         </div>
-    </footer>
 
-    
+        <div class="skill-group">
+          <h4>AI / ML</h4>
+          <div class="skill-pills">
+            <span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded',()=>{
+        <div class="skill-group">
+          <h4>Infrastructure &amp; Tools</h4>
+          <div class="skill-pills">
+            <span>Docker</span><span>PostgreSQL</span><span>SQLite</span><span>Git</span><span>Linux</span>
+          </div>
+        </div>
 
-            document.getElementById('contactForm').addEventListener('submit',(event) => {
-            event.preventDefault();
-            let name = event.target.name.value;
-            let email = event.target.email.value;
-            let subject = event.target.subject.value;
-            let message = event.target.message.value;
-            let params = {
-                name:name,
-                email:email,
-                subject:subject,
-                message:message
-            }
-            if (name.trim() && email.trim() && subject.trim() && message.trim()) {
-                emailjs.send("service_5eizowr","template_6idwmwc",params).then(
-                    document.getElementById('success').style.display = 'block'
-                )
-                event.target.reset();
-            } 
-            else {
-                document.getElementById('error').style.display = 'block';
-            }
-            })
+        <div class="skill-group">
+          <h4>Mobile</h4>
+          <div class="skill-pills">
+            <span>Flutter</span><span>Dart</span>
+          </div>
+        </div>
 
-            function sendMail(){
-                let params = {
-                    name:document.getElementById('name'),
-                    email:document.getElementById('email'),
-                    subject:document.getElementById('subject'),
-                }
-            }
+      </div>
+    </div>
+  </section>
 
-            function updateActiveNavigation() {
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <h2>Let's work<br /><em>together</em></h2>
+          <p>
+            Open to backend roles, freelance projects, and AI/ML collaborations. 
+            Feel free to reach out — I usually respond within a day.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:prabeshnepal0@gmail.com">prabeshnepal0@gmail.com</a>
+            <a href="tel:+9779815946526">+977 9815946526</a>
+            <a href="https://github.com/prabeshnpl" target="_blank" rel="noopener">github.com/prabeshnpl</a>
+            <a href="https://www.linkedin.com/in/prabesh-nepal-3485a7351/" target="_blank" rel="noopener">linkedin.com/in/prabesh-nepal</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
 
-                const sections = document.querySelectorAll('section');
-                const navLinks = document.querySelectorAll('.nav-link');
-                
-                let currentSection = '';
-                const scrollPosition = window.scrollY + 100; // Offset for fixed navbar
-                
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.offsetHeight;
-                    
-                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                        currentSection = section.getAttribute('id');
-                    }
-                });
-                
-                // Update active class
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${currentSection}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Prabesh Nepal</span>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
 
-            // Listen for scroll events
-            window.addEventListener('scroll', updateActiveNavigation);
-            
-            // Initial call to set active state
-            updateActiveNavigation();
-        })
-
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
